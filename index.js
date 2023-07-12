@@ -13,6 +13,7 @@ app.get('/', (req, res, next) => {
 app.post('/sns', (req, res, next) => {
     const snsMessage = req.body;
 
+    console.log(req);
     console.log('Received SNS message:', snsMessage);
 
     // Send response
